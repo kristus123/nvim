@@ -1,0 +1,17 @@
+snippet newarg "Description"
+if [ -z "$$1" \] ;then
+	echo "Expects argument 1 to be set to $2"
+	# return # use this if in method
+	# exit 1 # or else use this
+else
+	$2=$$1
+fi
+endsnippet
+
+snippet bin_bash "#!/bin/bash"
+#!/bin/bash
+endsnippet
+
+snippet bin_sh "#!/bin/sh"
+#!/bin/sh
+endsnippet

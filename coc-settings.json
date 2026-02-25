@@ -1,0 +1,9 @@
+{
+	"snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+	"snippets.ultisnips.pythonPrompt": false,
+	"inlayHint.enable": false,
+	"snippets.snipmate.enable":false,
+	"coc.source.snippets.priority": 99,
+	"coc.source.snippets-source.priority": 98,
+	"suggest.languageSourcePriority": 97
+}

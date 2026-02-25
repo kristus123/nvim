@@ -1,0 +1,224 @@
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+
+snippet if "if"
+if ($1) {
+	$2
+}
+endsnippet
+
+snippet ei "else if" b
+else if ($1) {
+	$2
+}
+endsnippet
+
+snippet cls "console.log($1)"
+console.log("$1")
+endsnippet
+
+snippet cl "console.log" 
+console.log($1)
+endsnippet
+
+snippet con "Description" 
+constructor() {
+	$1
+}
+endsnippet
+
+snippet el "Description" 
+else {
+	$1
+}
+endsnippet
+
+snippet cla "Class" 
+class $1 {
+	constructor() {
+	}
+}
+endsnippet
+
+snippet ecl "export class" 
+export class $1 {
+	constructor() {
+	}
+}
+endsnippet
+
+
+
+
+snippet cu "Description"
+{
+	$1
+}
+endsnippet
+
+snippet cm "class method" 
+$1() {
+	$2
+}
+endsnippet
+
+snippet scm "Description"
+static $1() {
+	$2
+}
+endsnippet
+
+snippet comment "Description"
+/*$1
+	*/
+endsnippet
+
+snippet imp "Description"
+import { $1 } from '/static/$1.js'
+endsnippet
+
+snippet this_field "Description"
+this.$1 = new $2()
+endsnippet
+
+snippet tupdate "Description" b
+this.$1.update()
+endsnippet
+
+snippet rf "return false" b
+return false
+endsnippet
+
+snippet rt "return true" b
+return true
+endsnippet
+
+snippet runall "Description" b
+this.runAll = new RunAll([
+
+])
+endsnippet
+
+snippet update "Description" b
+update() {
+	this.runAll.update()
+}
+
+endsnippet
+
+snippet arrow "Description"
+=> {
+	$1
+}
+endsnippet
+
+snippet la "Lambda"
+() => {
+	$1
+}
+endsnippet
+
+snippet lac "Lambda with char variable" i
+$1 => {
+	$2
+}
+endsnippet
+
+snippet lacc "Lambda with multiple char variables" i
+($1) => {
+	$2
+}
+endsnippet
+
+
+snippet pf "this.$1 = $2" b
+this.$1 = new ${1/\w+/\u$0/g}()
+endsnippet 
+
+snippet co, "()," Ai
+($1),
+endsnippet 
+
+snippet cob "([])" Ai
+([$1])
+endsnippet 
+
+snippet crl "{}" Ai
+{$1}
+endsnippet 
+
+snippet cr, "{}" Ai
+{$1},
+endsnippet 
+
+snippet 2. "this.$1" Ai
+this.$1
+endsnippet 
+
+snippet eq "=" Ai
+$2 = $1
+endsnippet 
+
+snippet 3q "===" Ai
+$2 === $1
+endsnippet 
+
+snippet cco "const $1 = $2" Ai
+const $1 = $2
+endsnippet 
+
+
+snippet tne "throw new error" b
+throw new Error("$1")
+endsnippet
+
+snippet np "new position" Ai
+new Position($1)
+endsnippet
+
+snippet distance "distance between" bi
+Distance.between($1)
+endsnippet
+
+snippet pushAway "Description" b
+Push($1).awayFrom($2)
+endsnippet
+
+snippet pushTowards "Description" b
+Push($1).towards($2)
+endsnippet
+
+snippet pfl "local objects []" b
+this.localObjects = new LocalObjects([
+	$1
+])
+endsnippet
+
+snippet update "Description" b
+update() {
+}
+endsnippet
+
+snippet ola "Description" i
+() => $1
+endsnippet
+
+snippet olac "Description" i
+$1 => $2
+endsnippet
+
+snippet olacc "Description" i
+() => {$1}
+endsnippet
+
+snippet dcl "${}" Ai
+${$1}
+endsnippet
+
+snippet 2fe ".forEach" Ai
+.forEach($1)
+endsnippet
