@@ -1,0 +1,53 @@
+snippet run_command "Execute cmd/terminal/shell command"
+import subprocess
+subprocess.Popen(['./swag.sh'])
+endsnippet
+
+snippet flask "flask quickstart" b
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+	return "<p>Hello, World!</p>"
+endsnippet
+
+snippet get_meta_repo_secret_value "Description" b
+import json
+
+with open('/home/kristian/meta-repo/secret_values/CHANGE_ME.json', 'r') as file:
+	$1 = json.load(file)["$1"]
+endsnippet
+
+snippet read_json_file "Description" b
+with open('CHANGE_FILE.json', 'r') as file:
+	data = json.load(file)
+endsnippet
+
+snippet write_json_file "Description" b
+with open('CHANGE_FILE.json', 'w') as file:
+	json.dump(OBJECT_TO_SAVE, file, indent=4, sort_keys=True)
+endsnippet
+
+snippet save_json_file "Description" b
+with open('CHANGE_FILE.json', 'w') as file:
+	json.dump(OBJECT_TO_SAVE, file, indent=4, sort_keys=True)
+endsnippet
+
+snippet setuptools "Description" b
+# setup.py
+
+from setuptools import setup, find_packages
+
+with open('requirements.txt') as f:
+	requirements = [r for r in f.read().splitlines() if "-e " not in r]
+
+setup(
+	name="NAME OF repo, (gpt, mail) etc",
+	version='0.1',
+	packages=find_packages(),
+	install_requires=requirements, 
+	include_package_data=True,
+)
+endsnippet
