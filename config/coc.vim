@@ -9,6 +9,8 @@ let g:python3_host_prog = "/usr/bin/python3"
 let g:coc_global_extensions = ["coc-pyright", "coc-tsserver"]
 let g:coc_filetype_map = {
       \ 'htmldjango': 'html',
+      \ 'js': 'html',
+      \ 'html': 'js',
       \ }
 
 nnoremap <Leader>e :CocCommand snippets.editSnippets<CR>
