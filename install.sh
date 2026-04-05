@@ -4,7 +4,7 @@ nvm install 21.4.0 --no-default
 
 sudo apt install python3-pynvim
 
-sudo apt remove neovim -y
+
 sudo apt install ninja-build gettext cmake unzip curl -y
 git clone https://github.com/neovim/neovim
 cd neovim
