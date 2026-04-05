@@ -1,4 +1,8 @@
+#!/bin/bash
+
 cd
+
+sudo apt install file -y
 
 nvm install 21.4.0 --no-default
 
