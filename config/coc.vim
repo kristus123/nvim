@@ -6,7 +6,7 @@ autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.ven
 
 let g:coc_node_path = '/home/kristian/.nvm/versions/node/v21.4.0/bin/node'
 let g:python3_host_prog = "/usr/bin/python3"
-let g:coc_global_extensions = ["coc-pyright", "coc-tsserver"]
+let g:coc_global_extensions = ["coc-pyright"]
 let g:coc_filetype_map = {
       \ 'htmldjango': 'html',
       \ }

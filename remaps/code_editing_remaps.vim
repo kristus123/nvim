@@ -1,7 +1,8 @@
-" to = tab out
-nnoremap to vi{>
 " ti = tab in
 nnoremap ti vi{<
+
+" to = tab out
+nnoremap to vi{>
 
 
 nnoremap v2 vi"

@@ -163,6 +163,10 @@ snippet eq "=" Ai
 $2 = $1
 endsnippet 
 
+snippet Wp "WorldPosition" Ai
+WorldPosition($1)
+endsnippet 
+
 snippet 3q "===" Ai
 $2 === $1
 endsnippet 
@@ -174,10 +178,6 @@ endsnippet
 
 snippet tne "throw new error" b
 throw new Error("$1")
-endsnippet
-
-snippet np "new position" Ai
-new Position($1)
 endsnippet
 
 snippet distance "distance between" bi
@@ -221,4 +221,9 @@ endsnippet
 
 snippet 2fe ".forEach" Ai
 .forEach($1)
+endsnippet
+
+snippet 2fo "forof" Ai
+for (const x of $1) {
+}
 endsnippet
