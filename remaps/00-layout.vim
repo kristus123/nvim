@@ -31,6 +31,7 @@ let s:layouts = {
       \ },
       \ }
 
+asldkfj
 let g:layout_keys = get(g:, 'layout_keys', get(s:layouts, g:layout_name, s:layouts.qwerty))
 
 " Movement and layout-sensitive mappings.

@@ -19,4 +19,3 @@ nnoremap d. dd
 
 nnoremap cw ciw
 
-nnoremap <leader>p :VenterToggle<CR>
