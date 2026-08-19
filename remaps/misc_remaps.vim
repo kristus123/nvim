@@ -15,7 +15,6 @@ inoremap <a-b> []<c-c>i
 noremap <a-d> <c-d>
 noremap <a-u> <c-u>
 
-nnoremap dd dd:w<CR>
 nnoremap d. dd
 nnoremap dd :delete<CR>:w<CR>
 

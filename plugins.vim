@@ -1,5 +1,7 @@
 call plug#begin()
 
+Plug 'Pocco81/auto-save.nvim'
+
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
 Plug 'easymotion/vim-easymotion'
