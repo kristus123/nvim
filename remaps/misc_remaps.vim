@@ -16,7 +16,6 @@ noremap <a-d> <c-d>
 noremap <a-u> <c-u>
 
 nnoremap d. dd
-nnoremap dd :delete<CR>:w<CR>
 
 nnoremap cw ciw
 
